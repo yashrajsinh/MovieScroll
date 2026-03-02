@@ -7,7 +7,8 @@ const movies: MovieModel[] = [
   {
     imgURL: 'https://bancodeseries.com.br/images/posters/7553.jpg',
     movieTitle: 'Peaky Blinders (2013)',
-    movieDescription: 'During his glory days, Berlin and a gang assembled.',
+    movieDescription:
+      'Vowing to avenge the murder of his parents, Bruce Wayne devotes his life to wiping out crime in Gotham City.',
   },
   {
     imgURL:
@@ -36,6 +37,20 @@ const movies: MovieModel[] = [
     movieTitle: 'Ghosts (2021)',
     movieDescription:
       'Samantha and Jay throw caution to the wind when they convert their recently inherited country estate into a bed-and-breakfast. Call it mislaid plans. Not only is the place falling apart.',
+  },
+  {
+    imgURL:
+      'https://image.tmdb.org/t/p/w600_and_h900_face/31GlRQMiDunO8cl3NxTz34U64rf.jpg',
+    movieTitle: 'Reacher (2022)',
+    movieDescription:
+      'Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.',
+  },
+  {
+    imgURL:
+      'https://image.tmdb.org/t/p/w600_and_h900_face/rTmal9fDbwh5F0waol2hq35U4ah.jpg',
+    movieTitle: 'Narcos (2015)',
+    movieDescription:
+      'A gritty chronicle of the war against Colombias infamously violent and powerful drug cartels.',
   },
 ];
 
@@ -76,6 +91,15 @@ const styles = StyleSheet.create({
     padding: 12,
     marginBottom: 16,
     alignItems: 'flex-start',
+
+    // iOS shadow
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+
+    // Android shadow
+    elevation: 6,
   },
 
   image: {
